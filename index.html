@@ -60,6 +60,7 @@
       text-align: center;
       padding: 20px;
       margin-top: 40px;
+      font-size: 15px;
     }
     iframe { width: 100%; border: 0; height: 300px; border-radius: 8px; }
 
@@ -88,25 +89,11 @@
   <div class="section">
     <h2>Upload Your Resume</h2>
     <p style="text-align: center; margin-bottom: 10px;"><strong>::: Upload Resume :::</strong></p>
-    <form action="mailto:ledgerlink.consulting@gmail.com" method="post" enctype="text/plain">
-      <div class="form-group">
-        <input type="text" name="name" placeholder="Enter your name" required />
-      </div>
-      <div class="form-group">
-        <input type="email" name="email" placeholder="Enter your email ID" required />
-      </div>
-      <div class="form-group">
-        <input type="tel" name="phone" placeholder="Enter your phone number" required />
-      </div>
-      <div class="form-group">
-        <textarea rows="4" name="message" placeholder="Message or details..."></textarea>
-      </div>
-      <button type="submit">Send Resume</button>
-    </form>
     <div class="qr-code">
-      <p>Or scan to upload your resume</p>
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://your-resume-upload-link.com" alt="QR Code" />
+      <p>Scan & Upload Your Resume</p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=mailto:ledgerlink.consulting@gmail.com" alt="QR Code" />
     </div>
+    <p style="text-align:center; margin-top: 10px;">Or email your resume to: <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a></p>
   </div>
 
   <div class="section">
@@ -156,16 +143,12 @@
     </iframe>
   </div>
 
-  <div class="section">
-    <h2>Awards & Recognitions</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/Economic_Times_Logo.svg/1200px-Economic_Times_Logo.svg.png" alt="Award" style="max-width:150px;">
-    <p>Recognized by ET Industry Leaders – 2025</p>
-  </div>
-
   <div class="footer">
     &copy; 2025 LedgerLink Consulting. All Rights Reserved.<br>
-    Contact: 8902277204 | Email: ledgerlink.consulting@gmail.com
+    📍 Address: Pioneer Park, Barasat, Kolkata – 700124<br>
+    📞 Phone: +91 8902277204<br>
+    📧 Email: <a href="mailto:ledgerlink.consulting@gmail.com" style="color: #fca311;">ledgerlink.consulting@gmail.com</a>
   </div>
 
 </body>
-</html>          
+</html>
