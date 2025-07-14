@@ -1,300 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LedgerLink Consulting</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; background: #f8f9fc; color: #222; }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LedgerLink Consulting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #f8f9fc; color: #222; }
 
-    header {
-      background: url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?fit=crop&w=1350&q=80') no-repeat center center/cover;
-      color: white;
-      padding: 100px 20px 60px;
-      text-align: center;
-      position: relative;
-    }
+    header {
+      background: url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?fit=crop&w=1350&q=80') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px 60px;
+      text-align: center;
+      position: relative;
+    }
 
-    header::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(20, 33, 61, 0.75);
-      z-index: 0;
-    }
+    header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(20, 33, 61, 0.75);
+      z-index: 0;
+    }
 
-    header > * {
-      position: relative;
-      z-index: 1;
-    }
+    header > * {
+      position: relative;
+      z-index: 1;
+    }
 
-    header img {
-      height: 80px;
-      border-radius: 8px;
-    }
+    header img {
+      height: 80px;
+      border-radius: 8px;
+    }
 
-    header h1 {
-      font-size: 36px;
-      margin-top: 20px;
-    }
+    header h1 {
+      font-size: 36px;
+      margin-top: 20px;
+    }
 
-    header p {
-      font-size: 18px;
-      color: #fca311;
-    }
+    header p {
+      font-size: 18px;
+      color: #fca311;
+    }
 
-    .section {
-      padding: 60px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
 
-    .section h2 {
-      font-size: 28px;
-      color: #14213d;
-      margin-bottom: 30px;
-      border-left: 5px solid #fca311;
-      padding-left: 15px;
-    }
+    .section h2 {
+      font-size: 28px;
+      color: #14213d;
+      margin-bottom: 30px;
+      border-left: 5px solid #fca311;
+      padding-left: 15px;
+    }
 
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
 
-    .service-box {
-      background: white;
-      border-radius: 12px;
-      padding: 25px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-      transition: transform 0.2s ease;
-      cursor: pointer;
-    }
+    .service-box {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
 
-    .service-box:hover {
-      transform: translateY(-5px);
-    }
+    .service-box:hover {
+      transform: translateY(-5px);
+    }
 
-    .service-box h3 {
-      color: #1f2c4d;
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
+    .service-box h3 {
+      color: #1f2c4d;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
 
-    .service-box p {
-      font-size: 15px;
-      color: #555;
-    }
+    .service-box p {
+      font-size: 15px;
+      color: #555;
+    }
 
-    .qr-section {
-      text-align: center;
-      background: white;
-      border-radius: 10px;
-      padding: 40px 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
+    .qr-section {
+      text-align: center;
+      background: white;
+      border-radius: 10px;
+      padding: 40px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
 
-    .qr-section img {
-      max-width: 180px;
-      margin: 20px 0;
-    }
+    .qr-section img {
+      max-width: 180px;
+      margin: 20px 0;
+    }
 
-    .testimonial {
-      background: white;
-      border-radius: 12px;
-      padding: 25px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
+    .testimonial {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
 
-    .testimonial strong {
-      display: block;
-      color: #1f2c4d;
-      margin-bottom: 8px;
-    }
+    .testimonial strong {
+      display: block;
+      color: #1f2c4d;
+      margin-bottom: 8px;
+    }
 
-    .contact-section {
-      background: url('https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/12.jpg') no-repeat center center/cover;
-      padding: 60px 20px;
-    }
+    .contact-section {
+      background: url('https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/12.jpg') no-repeat center center/cover;
+      padding: 60px 20px;
+    }
 
-    .contact-section form {
-      background: rgba(255, 255, 255, 0.95);
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
+    .contact-section form {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
 
-    .form-group {
-      margin-bottom: 15px;
-    }
+    .form-group {
+      margin-bottom: 15px;
+    }
 
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
 
-    button {
-      background: #14213d;
-      color: white;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-    }
+    button {
+      background: #14213d;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
 
-    button:hover {
-      background: #1f2c4d;
-    }
+    button:hover {
+      background: #1f2c4d;
+    }
 
-    iframe {
-      width: 100%;
-      border: 0;
-      height: 300px;
-      border-radius: 8px;
-    }
+    iframe {
+      width: 100%;
+      border: 0;
+      height: 300px;
+      border-radius: 8px;
+    }
 
-    .footer {
-      background: #14213d;
-      color: white;
-      text-align: center;
-      padding: 25px;
-      font-size: 15px;
-    }
+    .footer {
+      background: #14213d;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 15px;
+    }
 
-    a {
-      color: #fca311;
-      text-decoration: none;
-    }
+    a {
+      color: #fca311;
+      text-decoration: none;
+    }
 
-    @media (max-width: 768px) {
-      header h1 { font-size: 26px; }
-      .section h2 { font-size: 22px; }
-    }
+    .price-scroll-box {
+      position: fixed;
+      right: 20px;
+      top: 150px;
+      background: #ffffffee;
+      border: 2px solid #fca311;
+      border-radius: 10px;
+      padding: 15px 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+      max-width: 220px;
+      overflow: hidden;
+      animation: scrollBoxIn 1s ease forwards;
+    }
 
-    .marquee {
-      background: #fca311;
-      color: white;
-      padding: 12px 0;
-      font-weight: 600;
-      overflow: hidden;
-      white-space: nowrap;
-    }
+    .price-scroll-box h4 {
+      font-size: 18px;
+      color: #14213d;
+      margin-bottom: 10px;
+      text-align: center;
+      border-bottom: 1px dashed #fca311;
+      padding-bottom: 5px;
+    }
 
-    .marquee span {
-      display: inline-block;
-      padding-left: 100%;
-      animation: scroll-left 20s linear infinite;
-    }
+    .price-scroll-box ul {
+      list-style: none;
+      padding: 0;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #1f2c4d;
+    }
 
-    @keyframes scroll-left {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
-    }
-  </style>
+    .price-scroll-box ul li {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+
+    @keyframes scrollBoxIn {
+      from { opacity: 0; transform: translateX(100%); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 26px; }
+      .section h2 { font-size: 22px; }
+      .price-scroll-box { position: static; margin: 20px auto; max-width: 90%; animation: none; }
+    }
+  </style>
 </head>
 <body>
 
-  <header>
-    <img src="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg" alt="Logo" />
-    <h1>LedgerLink Consulting</h1>
-    <p>Linking Talent & Trust with Numbers</p>
-  </header>
+  <div class="price-scroll-box">
+    <h4>Our Pricing</h4>
+    <ul>
+      <li><span>GST Registration</span> <span>₹1000</span></li>
+      <li><span>ITR Filing</span> <span>from ₹500</span></li>
+      <li><span>GST Return</span> <span>from ₹500</span></li>
+      <li><span>Tax Audit</span> <span>₹6000</span></li>
+      <li><span>UDIN</span> <span>₹2000</span></li>
+    </ul>
+  </div>
 
-  <div class="marquee">
-    <span>GST Registration ₹1000 • ITR Filing from ₹500 • GST Monthly Return Filing from ₹500 • Tax Audit ₹6000 • UDIN ₹2000 • TDS Return Filing • GST Audit • Legal Services • Resume Support • Trade License • Data Entry • Job Support • LinkedIn Optimization • Mock Interviews • </span>
-  </div>
+  <header>
+    <img src="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg" alt="Logo" />
+    <h1>LedgerLink Consulting</h1>
+    <p>Linking Talent & Trust with Numbers</p>
+  </header>
 
-  <div class="section qr-section">
-    <h2>Upload Your Resume</h2>
-    <p><strong>Scan the QR or email your resume</strong></p>
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=mailto:ledgerlink.consulting@gmail.com" alt="QR Code" />
-    <p>Email: <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a></p>
-  </div>
+  <div class="section qr-section">
+    <h2>Upload Your Resume</h2>
+    <p><strong>Scan the QR or email your resume</strong></p>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=mailto:ledgerlink.consulting@gmail.com" alt="QR Code" />
+    <p>Email: <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a></p>
+  </div>
 
-  <div class="section">
-    <h2>Our Services</h2>
-    <div class="services-grid">
-      <div class="service-box">
-        <h3>Accounting & Bookkeeping</h3>
-        <p>Ledgers, cash books, journal entries, profit & loss, balance sheet preparation, data entry.</p>
-      </div>
-      <div class="service-box">
-        <h3>Payroll Management</h3>
-        <p>Salary processing, attendance, payslips, PF/ESI returns, TDS on salaries.</p>
-      </div>
-      <div class="service-box">
-        <h3>HR Recruitment & Staffing</h3>
-        <p>Candidate sourcing, interviews, onboarding, and staffing across domains.</p>
-      </div>
-      <div class="service-box">
-        <h3>Tax Filing & Compliance</h3>
-        <p>ITR 1–7, TDS returns, tax audit prep, advance tax, compliance reports. Tax Audit ₹6000, UDIN ₹2000.</p>
-      </div>
-      <div class="service-box">
-        <h3>GST & TDS Return Filing</h3>
-        <p>GSTR-1, 3B, 9, registration, TDS 26Q/27Q, payments, reconciliation. GST Filing from ₹500, GST Reg. ₹1000.</p>
-      </div>
-      <div class="service-box">
-        <h3>Business & Legal Services</h3>
-        <p>MSME, company setup, DIN, DSC, PAN/TAN, Trade License, GST Audit, case closure-related services.</p>
-      </div>
-      <div class="service-box">
-        <h3>Job & Career Services</h3>
-        <p>Resume building, mock interviews, job support, LinkedIn optimization, placement support.</p>
-      </div>
-    </div>
-  </div>
+  <div class="section">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-box"><h3>Accounting & Bookkeeping</h3><p>Ledgers, cash books, journal entries, profit & loss, and balance sheet preparation.</p></div>
+      <div class="service-box"><h3>Payroll Management</h3><p>Salary processing, attendance, payslips, PF/ESI returns, TDS on salaries.</p></div>
+      <div class="service-box"><h3>HR Recruitment & Staffing</h3><p>Candidate sourcing, interviews, onboarding, and staffing across domains.</p></div>
+      <div class="service-box"><h3>Tax Filing & Compliance</h3><p>ITR 1–7, TDS returns, tax audit prep, advance tax, and compliance reports.</p></div>
+      <div class="service-box"><h3>GST & TDS Return Filing</h3><p>GSTR-1, 3B, 9, 9C, registration, TDS 26Q/27Q, payments, reconciliation, case closure.</p></div>
+      <div class="service-box"><h3>Business Registration & Advisory</h3><p>MSME, proprietorship, company setup, DIN, DSC, PAN/TAN & planning.</p></div>
+      <div class="service-box"><h3>FSSAI Registration</h3><p>Food safety registration for businesses and food handlers.</p></div>
+      <div class="service-box"><h3>Professional Tax (P. Tax)</h3><p>PT enrollment and monthly/annual return filing.</p></div>
+      <div class="service-box"><h3>Import & Export License</h3><p>IEC registration, documentation, and compliance support.</p></div>
+      <div class="service-box"><h3>Trade License</h3><p>Application and renewal assistance for businesses.</p></div>
+      <div class="service-box"><h3>Legal & Tax Cases</h3><p>Expert advisory for GST, TDS, income tax and regulatory matters.</p></div>
+    </div>
+  </div>
 
-  <div class="section">
-    <h2>Client Testimonials</h2>
-    <div class="testimonial">
-      <strong>Argha Kumar Mondal – Founder</strong>
-      “At LedgerLink, we value every client. Our goal is to provide accurate, timely, and trustworthy accounting and consulting support. Your success is our success.”
-    </div>
-    <div class="testimonial">
-      <strong>Subhajit Ghosh – Co-founder</strong>
-      "We believe in building strong, long-term relationships with our clients by delivering consistent, quality-driven solutions."
-    </div>
-  </div>
+  <div class="section">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial">
+      <strong>Argha Kumar Mondal – Founder</strong>
+      “At LedgerLink, we value every client. Our goal is to provide accurate, timely, and trustworthy accounting and consulting support. Your success is our success.”
+    </div>
+    <div class="testimonial">
+      <strong>Subhajit Ghosh – Co-founder</strong>
+      "We believe in building strong, long-term relationships with our clients by delivering consistent, quality-driven solutions."
+    </div>
+  </div>
 
-  <div class="section contact-section">
-    <h2>Contact Form</h2>
-    <form action="mailto:ledgerlink.consulting@gmail.com" method="post" enctype="text/plain">
-      <div class="form-group">
-        <input type="text" name="name" placeholder="Your Name" required />
-      </div>
-      <div class="form-group">
-        <input type="email" name="email" placeholder="Your Email" required />
-      </div>
-      <div class="form-group">
-        <input type="tel" name="phone" placeholder="Your Phone Number" required />
-      </div>
-      <div class="form-group">
-        <textarea name="message" rows="4" placeholder="Your Message"></textarea>
-      </div>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
+  <div class="section contact-section">
+    <h2>Contact Form</h2>
+    <form action="mailto:ledgerlink.consulting@gmail.com" method="post" enctype="text/plain">
+      <div class="form-group"><input type="text" name="name" placeholder="Your Name" required /></div>
+      <div class="form-group"><input type="email" name="email" placeholder="Your Email" required /></div>
+      <div class="form-group"><input type="tel" name="phone" placeholder="Your Phone Number" required /></div>
+      <div class="form-group"><textarea name="message" rows="4" placeholder="Your Message"></textarea></div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 
-  <div class="section">
-    <h2>Our Location</h2>
-    <iframe src="https://maps.google.com/maps?q=Pioneer%20Park,%20Barasat,%20Kolkata%20700124&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
-  </div>
+  <div class="section">
+    <h2>Our Location</h2>
+    <iframe src="https://maps.google.com/maps?q=Pioneer%20Park,%20Barasat,%20Kolkata%20700124&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+  </div>
 
-  <div class="footer">
-    &copy; 2025 LedgerLink Consulting. All Rights Reserved.<br>
-    📍 Pioneer Park, Barasat, Kolkata – 700124<br>
-    📞 +91 8902277204<br>
-    📧 <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a>
-  </div>
+  <div class="footer">
+    &copy; 2025 LedgerLink Consulting. All Rights Reserved.<br>
+    📍 Pioneer Park, Barasat, Kolkata – 700124<br>
+    📞 +91 8902277204<br>
+    📧 <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a>
+  </div>
 
 </body>
 </html>
