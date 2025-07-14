@@ -33,7 +33,8 @@
       color: #14213d;
     }
     ul { padding-left: 25px; }
-    li { margin-bottom: 10px; }
+    li { margin-bottom: 10px; cursor: pointer; color: #14213d; }
+    li:hover { text-decoration: underline; }
 
     .form-group { margin-bottom: 15px; }
     input, textarea {
@@ -72,11 +73,19 @@
     }
     .qr-code img { max-width: 200px; border: 2px solid #ccc; border-radius: 8px; }
 
+    .service-details { display: none; margin-top: 15px; font-size: 15px; color: #333; }
+
     @media (max-width: 768px) {
       header h1 { font-size: 24px; }
       .section h2 { font-size: 20px; }
     }
   </style>
+  <script>
+    function toggleService(id) {
+      var elem = document.getElementById(id);
+      elem.style.display = elem.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
 </head>
 <body>
 
@@ -99,12 +108,23 @@
   <div class="section">
     <h2>Our Services</h2>
     <ul>
-      <li>Accounting & Bookkeeping</li>
-      <li>Payroll Management</li>
-      <li>HR Recruitment & Staffing</li>
-      <li>Tax Filing & Compliance</li>
-      <li>GST & TDS Return Filing</li>
-      <li>Business Registration & Advisory</li>
+      <li onclick="toggleService('service1')">Accounting & Bookkeeping</li>
+      <div id="service1" class="service-details">We maintain ledgers, journals, and generate monthly reports to keep your financials clear and compliant.</div>
+
+      <li onclick="toggleService('service2')">Payroll Management</li>
+      <div id="service2" class="service-details">Complete payroll solutions including payslip generation, TDS calculation, and salary disbursement tracking.</div>
+
+      <li onclick="toggleService('service3')">HR Recruitment & Staffing</li>
+      <div id="service3" class="service-details">We provide recruitment services for various roles and also offer temporary and permanent staffing solutions.</div>
+
+      <li onclick="toggleService('service4')">Tax Filing & Compliance</li>
+      <div id="service4" class="service-details">End-to-end tax filing services for individuals and businesses including ITR, GST, and TDS compliance.</div>
+
+      <li onclick="toggleService('service5')">GST & TDS Return Filing</li>
+      <div id="service5" class="service-details">We help you file monthly, quarterly, and annual GST and TDS returns without errors or delays.</div>
+
+      <li onclick="toggleService('service6')">Business Registration & Advisory</li>
+      <div id="service6" class="service-details">We support MSME, proprietorship, partnership, and private limited company registration along with compliance guidance.</div>
     </ul>
   </div>
 
@@ -112,6 +132,8 @@
     <h2>Client Testimonials</h2>
     <p><strong>Argha Kumar Mondal</strong> – Founder, LedgerLink Consulting</p>
     <p>“At LedgerLink, we value every client. Our goal is to provide accurate, timely, and trustworthy accounting and consulting support. Your success is our success.”</p>
+    <p><strong>Subhajit Ghosh</strong> – Co-founder, LedgerLink Consulting</p>
+    <p>"We believe in building strong, long-term relationships with our clients by delivering consistent, quality-driven solutions."</p>
   </div>
 
   <div class="section">
@@ -147,8 +169,9 @@
     &copy; 2025 LedgerLink Consulting. All Rights Reserved.<br>
     📍 Address: Pioneer Park, Barasat, Kolkata – 700124<br>
     📞 Phone: +91 8902277204<br>
+    👨‍💼 Founders: Argha Kumar Mondal & Subhajit Ghosh<br>
     📧 Email: <a href="mailto:ledgerlink.consulting@gmail.com" style="color: #fca311;">ledgerlink.consulting@gmail.com</a>
   </div>
 
 </body>
-</html>
+  </html>
