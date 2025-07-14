@@ -4,137 +4,153 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>LedgerLink Consulting</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; }
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      background-color: #f3f6fa;
-      color: #222;
-      line-height: 1.6;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #f4f7fb; color: #222; }
     header {
       background: linear-gradient(90deg, #14213d, #1f2c4d);
-      color: white;
-      padding: 50px 20px 30px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      color: white; padding: 40px 20px; text-align: center;
     }
-    header img {
-      height: 85px;
-      margin-bottom: 15px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-      font-weight: 700;
-    }
-    header p {
-      margin-top: 8px;
-      font-size: 18px;
-      color: #fca311;
-    }
-    section {
+    header img { height: 80px; }
+    header h1 { font-size: 32px; margin-top: 10px; }
+    header p { color: #fca311; font-size: 18px; }
+
+    .section {
+      padding: 40px 20px;
       max-width: 1000px;
-      margin: 40px auto;
-      padding: 40px 25px;
+      margin: auto;
       background: white;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-top: 30px;
     }
-    h2 {
-      font-size: 26px;
-      color: #14213d;
-      border-left: 6px solid #fca311;
-      padding-left: 14px;
+    .section h2 {
+      font-size: 24px;
       margin-bottom: 20px;
+      border-left: 5px solid #fca311;
+      padding-left: 15px;
+      color: #14213d;
     }
-    ul { padding-left: 30px; }
+    ul { padding-left: 25px; }
     li { margin-bottom: 10px; }
-    .contact-box {
-      background-color: #f1f4f9;
-      padding: 25px;
-      border-radius: 8px;
-      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.03);
+
+    .form-group { margin-bottom: 15px; }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
     }
-    footer {
-      background-color: #14213d;
-      color: #ffffff;
+    button {
+      background: #14213d;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover { background: #1f2c4d; }
+
+    .footer {
+      background: #14213d;
+      color: white;
       text-align: center;
-      padding: 20px 10px;
-      font-size: 14px;
-      margin-top: 60px;
+      padding: 20px;
+      margin-top: 40px;
     }
-    a {
-      color: #fca311;
-      text-decoration: none;
+    iframe { width: 100%; border: 0; height: 300px; border-radius: 8px; }
+
+    .qr-code {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
     }
-    a:hover {
-      text-decoration: underline;
-    }
+    .qr-code img { max-width: 200px; border: 2px solid #ccc; border-radius: 8px; }
+
     @media (max-width: 768px) {
-      header h1 { font-size: 28px; }
-      section {
-        margin: 20px 10px;
-        padding: 30px 15px;
-      }
-      h2 { font-size: 22px; }
+      header h1 { font-size: 24px; }
+      .section h2 { font-size: 20px; }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg" alt="LedgerLink Logo" />
+    <img src="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg" alt="Logo" />
     <h1>LedgerLink Consulting</h1>
     <p>Linking Talent & Trust with Numbers</p>
   </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>Founded in 2025, LedgerLink Consulting is a dynamic firm offering accounting solutions and staffing services. 
-    We connect businesses with reliable professionals and ensure their books stay clean and compliant. 
-    Our goal is to provide transparent, efficient, and personalized service to organizations across India.</p>
-  </section>
+  <div class="section">
+    <h2>Upload Your Resume</h2>
+    <p style="text-align: center; margin-bottom: 10px;"><strong>::: Upload Resume :::</strong></p>
+    <div class="qr-code">
+      <p>Scan & Upload Your Resume</p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://your-resume-upload-link.com" alt="QR Code" />
+    </div>
+    <input type="file" />
+  </div>
 
-  <section>
-    <h2>Mission & Vision</h2>
-    <p>Our mission is to be the most reliable partner for small and medium businesses by taking care of their financial 
-    and workforce needs. We envision becoming India’s most trusted name in accounting and HR consulting, driven by 
-    integrity, innovation, and impact.</p>
-  </section>
-
-  <section>
+  <div class="section">
     <h2>Our Services</h2>
     <ul>
       <li>Accounting & Bookkeeping</li>
       <li>Payroll Management</li>
       <li>HR Recruitment & Staffing</li>
-      <li>Tax Filing & Compliance Support</li>
-      <li>GST, TDS, and Business Registration</li>
-      <li>Compliance Documentation & Advisory</li>
+      <li>Tax Filing & Compliance</li>
+      <li>GST & TDS Return Filing</li>
+      <li>Business Registration & Advisory</li>
     </ul>
-  </section>
+  </div>
 
-  <section>
-    <h2>Why Choose Us?</h2>
-    <p>We combine industry experience with personalized service to deliver reliable results. Whether you're a startup or 
-    an established enterprise, our scalable services are tailored to support your growth.</p>
-  </section>
+  <div class="section">
+    <h2>Client Testimonials</h2>
+    <p><strong>Arnabi Ghosh</strong> – Deputy Director, Cordlife</p>
+    <p>“Genius HRTech has been a key partner in managing our HRMS, payroll, and compliance needs since 2017. Their team is efficient, responsive, and reliable.”</p>
+  </div>
 
-  <section>
-    <h2>Contact Us</h2>
-    <div class="contact-box">
-      <p><strong>Email:</strong> <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a></p>
-      <p><strong>Phone:</strong> <a href="tel:+918902277204">+91 8902277204</a></p>
-      <p><strong>Address:</strong> Pioneer Park, Barasat, Kolkata - 700124</p>
-    </div>
-  </section>
+  <div class="section">
+    <h2>Contact Form</h2>
+    <form>
+      <div class="form-group">
+        <input type="text" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Enter your email ID" required />
+      </div>
+      <div class="form-group">
+        <input type="tel" placeholder="Enter your phone number" required />
+      </div>
+      <div class="form-group">
+        <textarea rows="4" placeholder="Your message here..."></textarea>
+      </div>
+      <button type="submit">Submit Now</button>
+    </form>
+  </div>
 
-  <footer>
-    © 2025 LedgerLink Consulting. All rights reserved.
-  </footer>
+  <div class="section">
+    <h2>Our Location</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.657556968121!2d88.48131307596018!3d22.591328132381106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027601b38260a7%3A0x431000b4f6f4f6e6!2sGenius%20HRTech%20Limited!5e0!3m2!1sen!2sin!4v1717767591641!5m2!1sen!2sin"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <div class="section">
+    <h2>Awards & Recognitions</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/Economic_Times_Logo.svg/1200px-Economic_Times_Logo.svg.png" alt="Award" style="max-width:150px;">
+    <p>Recognized by ET Industry Leaders – 2025</p>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 LedgerLink Consulting. All Rights Reserved.
+  </div>
 
 </body>
-  </html>
+</html>
