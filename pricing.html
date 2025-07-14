@@ -1,43 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pricing - LedgerLink</title>
-  <style>
-    body { margin: 0; font-family: Arial; background: #f9f9f9; color: #222; }
-    header { background: #061c38; padding: 15px; color: #fff; text-align: center; }
-    nav a { color: orange; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    .container { padding: 30px; background: white; max-width: 900px; margin: auto; }
-    .plan { margin: 20px 0; padding: 15px; border: 1px solid #ccc; border-radius: 8px; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Pricing – LedgerLink Consulting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #f8f9fc; color: #222; }
+
+    nav {
+      background: #14213d;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 16px;
+    }
+
+    nav a {
+      color: #fca311;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?fit=crop&w=1350&q=80') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px 60px;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(20, 33, 61, 0.75);
+      z-index: 0;
+    }
+
+    header > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    header img {
+      height: 80px;
+      border-radius: 8px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-top: 20px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #fca311;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 28px;
+      color: #14213d;
+      margin-bottom: 30px;
+      border-left: 5px solid #fca311;
+      padding-left: 15px;
+    }
+
+    .pricing-table {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .pricing-item {
+      margin-bottom: 20px;
+    }
+
+    .pricing-item strong {
+      font-size: 18px;
+      color: #14213d;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .footer {
+      background: #14213d;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 15px;
+    }
+
+    a {
+      color: #fca311;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>LedgerLink</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="pricing.html">Our Pricing</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
 
-  <div class="container">
-    <h2>Our Pricing</h2>
-    <div class="plan">
-      <h3>Starter Plan - $199/month</h3>
-      <p>Perfect for small businesses. Includes basic bookkeeping and tax filing.</p>
-    </div>
-    <div class="plan">
-      <h3>Growth Plan - $499/month</h3>
-      <p>Includes payroll, compliance, and HR tools along with accounting support.</p>
-    </div>
-    <div class="plan">
-      <h3>Enterprise Plan - Custom</h3>
-      <p>Tailored for large enterprises. Contact us for a personalized quote.</p>
-    </div>
-  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pricing.html">Our Pricing</a>
+    <a href="services.html">Our Services</a>
+    <a href="about.html">About Us</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+
+  <header>
+    <img src="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg" alt="Logo" />
+    <h1>Our Pricing</h1>
+    <p>Transparent & Competitive Rates Tailored for Your Needs</p>
+  </header>
+
+  <div class="section">
+    <h2>Pricing Structure</h2>
+    <div class="pricing-table">
+      <div class="pricing-item">
+        <strong>GST & TDS Return Filing (Including GSTR-9C):</strong>
+        Starts at ₹999/month (depending on volume and turnover)
+      </div>
+      <div class="pricing-item">
+        <strong>Company Incorporation:</strong>
+        ₹4,999 – ₹9,999 (based on company type and structure)
+      </div>
+      <div class="pricing-item">
+        <strong>Trademark Registration:</strong>
+        ₹2,499 onwards
+      </div>
+      <div class="pricing-item">
+        <strong>Income Tax Filing:</strong>
+        ₹499 – ₹4,999 (individual & business filings)
+      </div>
+      <div class="pricing-item">
+        <strong>Accounting & Bookkeeping Services:</strong>
+        Starts at ₹1,999/month
+      </div>
+      <div class="pricing-item">
+        <strong>Payroll Processing:</strong>
+        Custom pricing based on team size
+      </div>
+      <div class="pricing-item">
+        <strong>Business Advisory & Consulting:</strong>
+        Hourly or project-based packages
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 LedgerLink Consulting. All Rights Reserved.<br>
+    📍 Pioneer Park, Barasat, Kolkata – 700124<br>
+    📞 +91 8902277204<br>
+    📧 <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a>
+  </div>
+
 </body>
 </html>
