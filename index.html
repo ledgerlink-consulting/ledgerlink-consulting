@@ -11,11 +11,12 @@
 
     nav {
       background: #14213d;
-      padding: 15px 20px;
+      padding: 12px 10px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
-      font-size: 16px;
+      gap: 20px;
+      font-size: 15px;
     }
 
     nav a {
@@ -31,7 +32,7 @@
     header {
       background: url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?fit=crop&w=1350&q=80') no-repeat center center/cover;
       color: white;
-      padding: 100px 20px 60px;
+      padding: 70px 15px 50px;
       text-align: center;
       position: relative;
     }
@@ -50,102 +51,99 @@
     }
 
     header img {
-      height: 80px;
+      height: 60px;
       border-radius: 8px;
     }
 
     header h1 {
-      font-size: 36px;
-      margin-top: 20px;
+      font-size: 28px;
+      margin-top: 15px;
     }
 
     header p {
-      font-size: 18px;
+      font-size: 16px;
       color: #fca311;
     }
 
     .section {
-      padding: 60px 20px;
-      max-width: 1200px;
+      padding: 40px 15px;
+      max-width: 960px;
       margin: auto;
     }
 
     .section h2 {
-      font-size: 28px;
+      font-size: 22px;
       color: #14213d;
-      margin-bottom: 30px;
-      border-left: 5px solid #fca311;
-      padding-left: 15px;
+      margin-bottom: 25px;
+      border-left: 4px solid #fca311;
+      padding-left: 12px;
     }
 
     .qr-section {
       text-align: center;
       background: white;
       border-radius: 10px;
-      padding: 40px 20px;
+      padding: 30px 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
 
     .qr-section img {
-      max-width: 180px;
-      margin: 20px 0;
+      max-width: 160px;
+      margin: 15px 0;
     }
 
     .qr-section p {
-      margin-top: 10px;
-      font-size: 16px;
-    }
-
-    .qr-section a {
-      color: #14213d;
-      text-decoration: underline;
+      font-size: 15px;
+      margin: 8px 0;
+      color: #222;
     }
 
     .testimonial {
       background: white;
       border-radius: 12px;
-      padding: 25px;
+      padding: 20px;
       margin-bottom: 20px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      font-size: 15px;
     }
 
     .testimonial strong {
       display: block;
       color: #1f2c4d;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .contact-section {
       background: url('https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/12.jpg') no-repeat center center/cover;
-      padding: 60px 20px;
+      padding: 50px 15px;
     }
 
     .contact-section form {
       background: rgba(255, 255, 255, 0.95);
-      padding: 30px;
+      padding: 25px;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
 
     .form-group {
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     input, textarea {
       width: 100%;
-      padding: 12px;
+      padding: 10px;
       border-radius: 6px;
       border: 1px solid #ccc;
-      font-size: 16px;
+      font-size: 15px;
     }
 
     button {
       background: #14213d;
       color: white;
-      padding: 12px 25px;
+      padding: 10px 20px;
       border: none;
       border-radius: 6px;
-      font-size: 16px;
+      font-size: 15px;
       cursor: pointer;
     }
 
@@ -156,7 +154,7 @@
     iframe {
       width: 100%;
       border: 0;
-      height: 300px;
+      height: 260px;
       border-radius: 8px;
     }
 
@@ -164,8 +162,8 @@
       background: #14213d;
       color: white;
       text-align: center;
-      padding: 25px;
-      font-size: 15px;
+      padding: 20px;
+      font-size: 14px;
     }
 
     .footer a {
@@ -175,6 +173,13 @@
 
     .footer a:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width: 500px) {
+      header h1 { font-size: 22px; }
+      header p { font-size: 14px; }
+      nav { font-size: 14px; gap: 10px; }
+      .section h2 { font-size: 20px; }
     }
   </style>
 </head>
@@ -198,7 +203,7 @@
     <h2>Upload Your Resume</h2>
     <p><strong>Scan the QR or email your resume</strong></p>
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=mailto:ledgerlink.consulting@gmail.com" alt="QR Code" />
-    <p>Email: <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a></p>
+    <p>Email: ledgerlink.consulting@gmail.com</p>
   </div>
 
   <div class="section">
