@@ -3,14 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LedgerLink Consulting</title>
+  <title>Our Services – LedgerLink Consulting</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Inter', sans-serif; background: #f8f9fc; color: #222; }
 
+    nav {
+      background: #14213d;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 15px 20px;
+    }
+
+    nav a {
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fca311;
+    }
+
     header {
-      background: url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?fit=crop&w=1350&q=80') no-repeat center center/cover;
+      background: url('https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/business-team-working-with-new-startup-project-plan-and-discussion-information-for-financial-strategy-with-laptop-and-digital-tablet-in-a-modern-business-lounge-video.jpg') no-repeat center center/cover;
       color: white;
       padding: 100px 20px 60px;
       text-align: center;
@@ -30,76 +51,9 @@
       z-index: 1;
     }
 
-    header img {
-      height: 80px;
-      border-radius: 8px;
-    }
-
     header h1 {
       font-size: 36px;
       margin-top: 20px;
-    }
-
-    header p {
-      font-size: 18px;
-      color: #fca311;
-    }
-
-    nav {
-      background: #14213d;
-      display: flex;
-      justify-content: center;
-      padding: 15px 20px;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: #fca311;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-      gap: 5px;
-      margin-left: auto;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      z-index: 999;
-    }
-
-    .menu-toggle div {
-      width: 25px;
-      height: 3px;
-      background-color: #fca311;
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        align-items: flex-start;
-        display: none;
-      }
-
-      nav.show {
-        display: flex;
-      }
-
-      .menu-toggle {
-        display: flex;
-      }
-
-      header h1 { font-size: 26px; }
-      .section h2 { font-size: 22px; }
     }
 
     .section {
@@ -146,78 +100,6 @@
       color: #555;
     }
 
-    .qr-section {
-      text-align: center;
-      background: white;
-      border-radius: 10px;
-      padding: 40px 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-
-    .qr-section img {
-      max-width: 180px;
-      margin: 20px 0;
-    }
-
-    .testimonial {
-      background: white;
-      border-radius: 12px;
-      padding: 25px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-
-    .testimonial strong {
-      display: block;
-      color: #1f2c4d;
-      margin-bottom: 8px;
-    }
-
-    .contact-section {
-      background: url('https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/12.jpg') no-repeat center center/cover;
-      padding: 60px 20px;
-    }
-
-    .contact-section form {
-      background: rgba(255, 255, 255, 0.95);
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-
-    .form-group {
-      margin-bottom: 15px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-    }
-
-    button {
-      background: #14213d;
-      color: white;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #1f2c4d;
-    }
-
-    iframe {
-      width: 100%;
-      border: 0;
-      height: 300px;
-      border-radius: 8px;
-    }
-
     .footer {
       background: #14213d;
       color: white;
@@ -230,76 +112,79 @@
       color: #fca311;
       text-decoration: none;
     }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 26px; }
+      .section h2 { font-size: 22px; }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <img src="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg" alt="Logo" />
-    <h1>LedgerLink Consulting</h1>
-    <p>Linking Talent & Trust with Numbers</p>
-  </header>
 
-  <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('show')">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     <a href="services.html">Our Services</a>
     <a href="pricing.html">Pricing</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html">Contact Us</a>
   </nav>
 
-  <div class="section qr-section">
-    <h2>Upload Your Resume</h2>
-    <p><strong>Scan the QR or email your resume</strong></p>
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=mailto:ledgerlink.consulting@gmail.com" alt="QR Code" />
-    <p>Email: <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a></p>
-  </div>
+  <header>
+    <h1>Our Services</h1>
+  </header>
 
   <div class="section">
-    <h2>Our Services</h2>
+    <h2>What We Offer</h2>
     <div class="services-grid">
-      <!-- Keep your service boxes here (same as before) -->
+      <div class="service-box">
+        <h3>Accounting & Bookkeeping</h3>
+        <p>Ledgers, cash books, journal entries, profit & loss, and balance sheet preparation.</p>
+      </div>
+      <div class="service-box">
+        <h3>Payroll Management</h3>
+        <p>Salary processing, attendance, payslips, PF/ESI returns, TDS on salaries.</p>
+      </div>
+      <div class="service-box">
+        <h3>HR Recruitment & Staffing</h3>
+        <p>Candidate sourcing, interviews, onboarding, and staffing across domains.</p>
+      </div>
+      <div class="service-box">
+        <h3>Tax Filing & Compliance</h3>
+        <p>ITR 1–7, TDS returns, tax audit prep, advance tax, and compliance reports.</p>
+      </div>
+      <div class="service-box">
+        <h3>GST & TDS Return Filing</h3>
+        <p>GSTR-1, 3B, 9, registration, TDS 26Q/27Q, payments, reconciliation.</p>
+      </div>
+      <div class="service-box">
+        <h3>Business Registration & Advisory</h3>
+        <p>MSME, proprietorship, company setup, DIN, DSC, PAN/TAN & planning.</p>
+      </div>
+      <div class="service-box">
+        <h3>FSSAI Registration</h3>
+        <p>Food business license registration, renewals, and compliance filing for FBOs.</p>
+      </div>
+      <div class="service-box">
+        <h3>Professional Tax (P-Tax) Filing</h3>
+        <p>Employer and employee registration, monthly return filing, and compliance.</p>
+      </div>
+      <div class="service-box">
+        <h3>Import & Export License (IEC)</h3>
+        <p>Obtaining IEC for businesses, DGFT liaison, and related trade compliances.</p>
+      </div>
+      <div class="service-box">
+        <h3>GST 9C & Audit Assistance</h3>
+        <p>Preparation of GST 9C forms, audit coordination, and representation support.</p>
+      </div>
+      <div class="service-box">
+        <h3>Case Closures & Legal Advisory</h3>
+        <p>Support with closure of tax cases, notices, and legal representation before authorities.</p>
+      </div>
+      <div class="service-box">
+        <h3>Expanded TDS & GST Support</h3>
+        <p>Late fee calculations, interest payments, correction returns, NIL filings, and compliance review.</p>
+      </div>
     </div>
-  </div>
-
-  <div class="section">
-    <h2>Client Testimonials</h2>
-    <div class="testimonial">
-      <strong>Argha Kumar Mondal – Founder</strong>
-      “At LedgerLink, we value every client. Our goal is to provide accurate, timely, and trustworthy accounting and consulting support. Your success is our success.”
-    </div>
-    <div class="testimonial">
-      <strong>Subhajit Ghosh – Co-founder</strong>
-      "We believe in building strong, long-term relationships with our clients by delivering consistent, quality-driven solutions."
-    </div>
-  </div>
-
-  <div class="section contact-section">
-    <h2>Contact Form</h2>
-    <form action="mailto:ledgerlink.consulting@gmail.com" method="post" enctype="text/plain">
-      <div class="form-group">
-        <input type="text" name="name" placeholder="Your Name" required />
-      </div>
-      <div class="form-group">
-        <input type="email" name="email" placeholder="Your Email" required />
-      </div>
-      <div class="form-group">
-        <input type="tel" name="phone" placeholder="Your Phone Number" required />
-      </div>
-      <div class="form-group">
-        <textarea name="message" rows="4" placeholder="Your Message"></textarea>
-      </div>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-
-  <div class="section">
-    <h2>Our Location</h2>
-    <iframe src="https://maps.google.com/maps?q=Pioneer%20Park,%20Barasat,%20Kolkata%20700124&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
   </div>
 
   <div class="footer">
@@ -308,5 +193,6 @@
     📞 +91 8902277204<br>
     📧 <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a>
   </div>
+
 </body>
 </html>
