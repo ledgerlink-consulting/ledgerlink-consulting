@@ -178,6 +178,27 @@
       header h1 { font-size: 26px; }
       .section h2 { font-size: 22px; }
     }
+
+    /* Scrolling service marquee */
+    .marquee {
+      background: #fca311;
+      color: white;
+      padding: 12px 0;
+      font-weight: 600;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 20s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
   </style>
 </head>
 <body>
@@ -187,6 +208,10 @@
     <h1>LedgerLink Consulting</h1>
     <p>Linking Talent & Trust with Numbers</p>
   </header>
+
+  <div class="marquee">
+    <span>GST Registration • ITR Filing • Tax Audit • UDIN • Trade License • GST Registration • ITR Filing • Tax Audit • UDIN • Trade License • </span>
+  </div>
 
   <div class="section qr-section">
     <h2>Upload Your Resume</h2>
@@ -269,4 +294,4 @@
   </div>
 
 </body>
-</html>
+  </html>
