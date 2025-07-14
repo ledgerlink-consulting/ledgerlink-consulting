@@ -3,27 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Our Services – LedgerLink Consulting</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Our Services | LedgerLink Consulting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Inter', sans-serif; background: #f8f9fc; color: #222; }
 
     nav {
       background: #14213d;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
       padding: 15px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
     }
 
     nav a {
       color: white;
-      font-weight: 600;
       text-decoration: none;
+      font-weight: 600;
       font-size: 16px;
-      transition: color 0.3s;
     }
 
     nav a:hover {
@@ -31,7 +30,7 @@
     }
 
     header {
-      background: url('https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/business-team-working-with-new-startup-project-plan-and-discussion-information-for-financial-strategy-with-laptop-and-digital-tablet-in-a-modern-business-lounge-video.jpg') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?fit=crop&w=1350&q=80') no-repeat center center/cover;
       color: white;
       padding: 100px 20px 60px;
       text-align: center;
@@ -51,9 +50,19 @@
       z-index: 1;
     }
 
+    header img {
+      height: 80px;
+      border-radius: 8px;
+    }
+
     header h1 {
       font-size: 36px;
       margin-top: 20px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #fca311;
     }
 
     .section {
@@ -114,8 +123,16 @@
     }
 
     @media (max-width: 768px) {
-      header h1 { font-size: 26px; }
-      .section h2 { font-size: 22px; }
+      nav {
+        gap: 20px;
+        padding: 10px;
+      }
+      header h1 {
+        font-size: 26px;
+      }
+      .section h2 {
+        font-size: 22px;
+      }
     }
   </style>
 </head>
@@ -130,7 +147,9 @@
   </nav>
 
   <header>
+    <img src="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg" alt="Logo" />
     <h1>Our Services</h1>
+    <p>Professional Solutions in Accounting, Taxation & HR</p>
   </header>
 
   <div class="section">
@@ -154,7 +173,8 @@
       </div>
       <div class="service-box">
         <h3>GST & TDS Return Filing</h3>
-        <p>GSTR-1, 3B, 9, registration, TDS 26Q/27Q, payments, reconciliation.</p>
+        <p>GSTR-1, 3B, 9, registration, TDS 26Q/27Q, payments, reconciliation.<br>
+        <strong>Also includes:</strong> GST 9C preparation, audit coordination, and representation support.</p>
       </div>
       <div class="service-box">
         <h3>Business Registration & Advisory</h3>
@@ -171,10 +191,6 @@
       <div class="service-box">
         <h3>Import & Export License (IEC)</h3>
         <p>Obtaining IEC for businesses, DGFT liaison, and related trade compliances.</p>
-      </div>
-      <div class="service-box">
-        <h3>GST 9C & Audit Assistance</h3>
-        <p>Preparation of GST 9C forms, audit coordination, and representation support.</p>
       </div>
       <div class="service-box">
         <h3>Case Closures & Legal Advisory</h3>
