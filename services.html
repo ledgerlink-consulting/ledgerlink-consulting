@@ -2,36 +2,137 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Our Services - LedgerLink Consulting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { margin: 0; font-family: Arial; background: #f4f4f4; color: #222; }
-    header { background: #061c38; padding: 15px; color: #fff; text-align: center; }
-    nav a { color: orange; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    .container { padding: 30px; background: white; max-width: 900px; margin: auto; }
-    ul { padding-left: 20px; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #f8f9fc; color: #222; }
+
+    nav {
+      background: #14213d;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 16px;
+    }
+
+    nav a {
+      color: #fca311;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?fit=crop&w=1350&q=80') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px 60px;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(20, 33, 61, 0.75);
+      z-index: 0;
+    }
+
+    header > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    header img {
+      height: 80px;
+      border-radius: 8px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-top: 20px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #fca311;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 28px;
+      color: #14213d;
+      margin-bottom: 30px;
+      border-left: 5px solid #fca311;
+      padding-left: 15px;
+    }
+
+    .services-image {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    ul {
+      margin-top: 20px;
+      padding-left: 20px;
+      line-height: 1.8;
+    }
+
+    .footer {
+      background: #14213d;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 15px;
+    }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pricing.html">Our Pricing</a>
+    <a href="services.html">Our Services</a>
+    <a href="about.html">About Us</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+
   <header>
-    <h1>LedgerLink</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="pricing.html">Our Pricing</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
+    <img src="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg" alt="Logo" />
+    <h1>Our Services</h1>
+    <p>Helping you grow with tailored business solutions</p>
   </header>
 
-  <div class="container">
-    <h2>Our Services</h2>
+  <div class="section">
+    <h2>Our Key Offerings</h2>
     <ul>
-      <li><strong>Accounting Services</strong> – Monthly bookkeeping, financial reporting, and compliance.</li>
-      <li><strong>Tax Services</strong> – Corporate and individual tax planning, filing, and consulting.</li>
-      <li><strong>HR & Payroll</strong> – End-to-end payroll processing, onboarding, and policy setup.</li>
-      <li><strong>Business Advisory</strong> – Strategic financial planning and business setup support.</li>
+      <li>Accounting & Bookkeeping Services</li>
+      <li>Payroll Management</li>
+      <li>Taxation and Compliance Support</li>
+      <li>Human Resource Solutions</li>
+      <li>Recruitment & Staffing</li>
+      <li>Startup Consultancy and Legal Setup</li>
     </ul>
+    <img class="services-image" src="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/main/Assets/13.jpg" alt="LedgerLink Services">
+  </div>
+
+  <div class="footer">
+    &copy; 2025 LedgerLink Consulting. All Rights Reserved.<br>
+    📍 Pioneer Park, Barasat, Kolkata – 700124<br>
+    📞 +91 8902277204<br>
+    📧 <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a>
   </div>
 </body>
 </html>
