@@ -7,170 +7,162 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; background: #f4f7fb; color: #222; }
-    header {
-      background: linear-gradient(90deg, #14213d, #1f2c4d);
-      color: white; padding: 40px 20px; text-align: center;
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #2c2c2c;
+      line-height: 1.6;
+      scroll-behavior: smooth;
     }
-    header img { height: 80px; }
-    header h1 { font-size: 32px; margin-top: 10px; }
-    header p { color: #fca311; font-size: 18px; }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1565373675981-2c20588c3cbe?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 120px 20px 100px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 5px #00000088;
+    }
+
+    .hero p {
+      font-size: 20px;
+      text-shadow: 1px 1px 4px #00000066;
+    }
+
+    header {
+      background: linear-gradient(45deg, #1f2937, #111827);
+      color: white;
+      padding: 30px 20px 20px;
+      text-align: center;
+    }
+
+    header img {
+      height: 80px;
+    }
 
     .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      margin-top: 30px;
+      padding: 60px 25px;
+      max-width: 1100px;
+      margin: 40px auto;
+      background: #f8fafc;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      animation: fadeIn 1s ease-in-out;
     }
+
     .section h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
+      font-size: 28px;
+      color: #111827;
       border-left: 5px solid #fca311;
       padding-left: 15px;
-      color: #14213d;
+      margin-bottom: 25px;
     }
-    ul { padding-left: 25px; }
-    li { margin-bottom: 10px; cursor: pointer; color: #14213d; }
-    li:hover { text-decoration: underline; }
 
-    .form-group { margin-bottom: 15px; }
-    input, textarea {
+    iframe.video {
       width: 100%;
-      padding: 12px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-    }
-    button {
-      background: #14213d;
-      color: white;
-      padding: 12px 25px;
+      height: 400px;
       border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      margin-top: 20px;
     }
-    button:hover { background: #1f2c4d; }
 
     .footer {
-      background: #14213d;
-      color: white;
+      background: #111827;
+      color: #e5e7eb;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 30px 10px;
       font-size: 15px;
     }
-    iframe { width: 100%; border: 0; height: 300px; border-radius: 8px; }
 
-    .qr-code {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 30px;
+    .footer a {
+      color: #fca311;
     }
-    .qr-code img { max-width: 200px; border: 2px solid #ccc; border-radius: 8px; }
 
-    .service-details { display: none; margin-top: 15px; font-size: 15px; color: #333; }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50px;
+      padding: 12px 18px;
+      font-size: 16px;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .whatsapp-float img {
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    .contact-now {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #fca311;
+      color: white;
+      border-radius: 6px;
+      padding: 10px 20px;
+      font-weight: bold;
+      z-index: 1000;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
 
     @media (max-width: 768px) {
-      header h1 { font-size: 24px; }
-      .section h2 { font-size: 20px; }
+      .hero h1 { font-size: 28px; }
+      .section h2 { font-size: 22px; }
+      iframe.video { height: 240px; }
     }
   </style>
-  <script>
-    function toggleService(id) {
-      var elem = document.getElementById(id);
-      elem.style.display = elem.style.display === 'none' ? 'block' : 'none';
-    }
-  </script>
 </head>
 <body>
 
   <header>
-    <img src="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg" alt="Logo" />
-    <h1>LedgerLink Consulting</h1>
-    <p>Linking Talent & Trust with Numbers</p>
+    <img src="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg" alt="LedgerLink Logo" />
   </header>
 
-  <div class="section">
-    <h2>Upload Your Resume</h2>
-    <p style="text-align: center; margin-bottom: 10px;"><strong>::: Upload Resume :::</strong></p>
-    <div class="qr-code">
-      <p>Scan & Upload Your Resume</p>
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=mailto:ledgerlink.consulting@gmail.com" alt="QR Code" />
-    </div>
-    <p style="text-align:center; margin-top: 10px;">Or email your resume to: <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a></p>
+  <div class="hero">
+    <h1>Welcome to LedgerLink Consulting</h1>
+    <p>Your Trusted Partner for Accounting & Staffing Solutions</p>
   </div>
 
   <div class="section">
-    <h2>Our Services</h2>
-    <ul>
-      <li onclick="toggleService('service1')">Accounting & Bookkeeping</li>
-      <div id="service1" class="service-details">Includes maintaining ledgers, cash books, reconciliation, journal entries, trial balance, profit & loss, and balance sheet preparation.</div>
-
-      <li onclick="toggleService('service2')">Payroll Management</li>
-      <div id="service2" class="service-details">Covers employee salary processing, attendance integration, payslip generation, PF/ESI return filing, and TDS calculation on salaries.</div>
-
-      <li onclick="toggleService('service3')">HR Recruitment & Staffing</li>
-      <div id="service3" class="service-details">Includes sourcing candidates, scheduling interviews, onboarding assistance, temporary & permanent staffing across domains.</div>
-
-      <li onclick="toggleService('service4')">Tax Filing & Compliance</li>
-      <div id="service4" class="service-details">ITR (1-7), TDS returns (24Q, 26Q), advance tax, tax audit report prep, and compliance with latest CBDT and MCA norms.</div>
-
-      <li onclick="toggleService('service5')">GST & TDS Return Filing</li>
-      <div id="service5" class="service-details">GSTR-1, GSTR-3B, GSTR-9, GSTR-9C filing, GST registration & amendments, TDS 26Q, 27Q, payment and reconciliation, compliance notice reply.</div>
-
-      <li onclick="toggleService('service6')">Business Registration & Advisory</li>
-      <div id="service6" class="service-details">MSME/UDYAM, proprietorship, partnership firm, private limited company registration, DIN, DSC, PAN/TAN applications, compliance & business planning.</div>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Client Testimonials</h2>
-    <p><strong>Argha Kumar Mondal</strong> – Founder, LedgerLink Consulting</p>
-    <p>“At LedgerLink, we value every client. Our goal is to provide accurate, timely, and trustworthy accounting and consulting support. Your success is our success.”</p>
-    <p><strong>Subhajit Ghosh</strong> – Co-founder, LedgerLink Consulting</p>
-    <p>"We believe in building strong, long-term relationships with our clients by delivering consistent, quality-driven solutions."</p>
-  </div>
-
-  <div class="section">
-    <h2>Contact Form</h2>
-    <form action="mailto:ledgerlink.consulting@gmail.com" method="post" enctype="text/plain">
-      <div class="form-group">
-        <input type="text" name="name" placeholder="Enter your name" required />
-      </div>
-      <div class="form-group">
-        <input type="email" name="email" placeholder="Enter your email ID" required />
-      </div>
-      <div class="form-group">
-        <input type="tel" name="phone" placeholder="Enter your phone number" required />
-      </div>
-      <div class="form-group">
-        <textarea rows="4" name="message" placeholder="Your message here..."></textarea>
-      </div>
-      <button type="submit">Submit Now</button>
-    </form>
-  </div>
-
-  <div class="section">
-    <h2>Our Location</h2>
-    <iframe 
-      src="https://maps.google.com/maps?q=Pioneer%20Park,%20Barasat,%20Kolkata%20700124&t=&z=15&ie=UTF8&iwloc=&output=embed"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+    <h2>Who We Are</h2>
+    <p>LedgerLink Consulting is a modern accounting and recruitment consultancy based in Kolkata. We help businesses streamline their accounts and connect them with skilled professionals.</p>
+    <iframe class="video" src="https://www.youtube.com/embed/BHACKCNDMW8" allowfullscreen></iframe>
   </div>
 
   <div class="footer">
-    &copy; 2025 LedgerLink Consulting. All Rights Reserved.<br>
-    📍 Address: Pioneer Park, Barasat, Kolkata – 700124<br>
-    📞 Phone: +91 8902277204<br>
-    📧 Email: <a href="mailto:ledgerlink.consulting@gmail.com" style="color: #fca311;">ledgerlink.consulting@gmail.com</a>
+    &copy; 2025 LedgerLink Consulting. All Rights Reserved.<br />
+    📍 Pioneer Park, Barasat, Kolkata – 700124<br />
+    📞 +91 8902277204<br />
+    📧 <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a>
   </div>
+
+  <a class="whatsapp-float" href="https://wa.me/918902277204" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
+    Chat with us
+  </a>
+
+  <a class="contact-now" href="mailto:ledgerlink.consulting@gmail.com">Contact Now</a>
 
 </body>
 </html>
