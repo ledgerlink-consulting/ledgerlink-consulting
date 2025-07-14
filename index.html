@@ -3,11 +3,160 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Us | LedgerLink Consulting</title>
+  <title>LedgerLink Consulting</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    /* same CSS as your homepage */
-    /* [You can copy the entire <style> block from your homepage here] */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #f8f9fc; color: #222; }
+
+    nav {
+      background: #14213d;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 16px;
+    }
+
+    nav a {
+      color: #fca311;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?fit=crop&w=1350&q=80') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px 60px;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(20, 33, 61, 0.75);
+      z-index: 0;
+    }
+
+    header > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    header img {
+      height: 80px;
+      border-radius: 8px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-top: 20px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #fca311;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 28px;
+      color: #14213d;
+      margin-bottom: 30px;
+      border-left: 5px solid #fca311;
+      padding-left: 15px;
+    }
+
+    .qr-section {
+      text-align: center;
+      background: white;
+      border-radius: 10px;
+      padding: 40px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .qr-section img {
+      max-width: 180px;
+      margin: 20px 0;
+    }
+
+    .testimonial {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .testimonial strong {
+      display: block;
+      color: #1f2c4d;
+      margin-bottom: 8px;
+    }
+
+    .contact-section {
+      background: url('https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/12.jpg') no-repeat center center/cover;
+      padding: 60px 20px;
+    }
+
+    .contact-section form {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      background: #14213d;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1f2c4d;
+    }
+
+    iframe {
+      width: 100%;
+      border: 0;
+      height: 300px;
+      border-radius: 8px;
+    }
+
+    .footer {
+      background: #14213d;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 15px;
+    }
   </style>
 </head>
 <body>
@@ -22,34 +171,43 @@
 
   <header>
     <img src="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg" alt="Logo" />
-    <h1>About LedgerLink</h1>
-    <p>Our Journey. Our Values. Our Vision.</p>
+    <h1>LedgerLink Consulting</h1>
+    <p>Linking Talent & Trust with Numbers</p>
   </header>
 
-  <div class="section">
-    <h2>Who We Are</h2>
-    <p>
-      LedgerLink Consulting was founded with a singular goal: to bridge the gap between businesses and financial clarity. Our firm is driven by professionals with years of experience in accounting, tax consultancy, and corporate advisory. We believe that trust and transparency are the foundations of great partnerships.
-    </p>
+  <div class="section qr-section">
+    <h2>Upload Your Resume</h2>
+    <p><strong>Scan the QR or email your resume</strong></p>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=mailto:ledgerlink.consulting@gmail.com" alt="QR Code" />
+    <p>Email: <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a></p>
   </div>
 
   <div class="section">
-    <h2>Our Mission</h2>
-    <p>
-      To empower businesses of all sizes with accurate financial insights, timely reporting, and strategic guidance so they can grow with confidence.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Meet the Founders</h2>
+    <h2>Client Testimonials</h2>
     <div class="testimonial">
       <strong>Argha Kumar Mondal – Founder</strong>
-      “My mission has always been to help businesses navigate complex financial terrain with confidence and clarity.”
+      “At LedgerLink, we value every client. Our goal is to provide accurate, timely, and trustworthy accounting and consulting support. Your success is our success.”
     </div>
     <div class="testimonial">
       <strong>Subhajit Ghosh – Co-founder</strong>
-      "LedgerLink is more than a firm — it’s a trusted partner to our clients. We're proud of the value we bring every day."
+      "We believe in building strong, long-term relationships with our clients by delivering consistent, quality-driven solutions."
     </div>
+  </div>
+
+  <div class="section contact-section" id="contact">
+    <h2>Contact Form</h2>
+    <form action="mailto:ledgerlink.consulting@gmail.com" method="post" enctype="text/plain">
+      <div class="form-group"><input type="text" name="name" placeholder="Your Name" required /></div>
+      <div class="form-group"><input type="email" name="email" placeholder="Your Email" required /></div>
+      <div class="form-group"><input type="tel" name="phone" placeholder="Your Phone Number" required /></div>
+      <div class="form-group"><textarea name="message" rows="4" placeholder="Your Message"></textarea></div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="section">
+    <h2>Our Location</h2>
+    <iframe src="https://maps.google.com/maps?q=Pioneer%20Park,%20Barasat,%20Kolkata%20700124&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
   </div>
 
   <div class="footer">
