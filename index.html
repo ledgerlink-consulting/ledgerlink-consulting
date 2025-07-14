@@ -11,10 +11,10 @@
 
     nav {
       background: #14213d;
-      padding: 10px 15px;
+      padding: 15px 20px;
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 30px;
       font-size: 16px;
     }
 
@@ -31,7 +31,7 @@
     header {
       background: url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?fit=crop&w=1350&q=80') no-repeat center center/cover;
       color: white;
-      padding: 80px 15px 50px;
+      padding: 80px 20px 50px;
       text-align: center;
       position: relative;
     }
@@ -50,92 +50,93 @@
     }
 
     header img {
-      height: 70px;
+      height: 80px;
       border-radius: 8px;
     }
 
     header h1 {
-      font-size: 30px;
-      margin-top: 15px;
+      font-size: 36px;
+      margin-top: 20px;
     }
 
     header p {
-      font-size: 16px;
+      font-size: 18px;
       color: #fca311;
+      margin-top: 10px;
     }
 
     .section {
-      padding: 50px 15px;
-      max-width: 1100px;
+      padding: 60px 20px;
+      max-width: 1200px;
       margin: auto;
     }
 
     .section h2 {
-      font-size: 24px;
+      font-size: 28px;
       color: #14213d;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
       border-left: 5px solid #fca311;
-      padding-left: 12px;
+      padding-left: 15px;
     }
 
     .qr-section {
       text-align: center;
       background: white;
       border-radius: 10px;
-      padding: 30px 15px;
+      padding: 40px 20px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
 
     .qr-section img {
-      max-width: 160px;
-      margin: 15px 0;
+      max-width: 180px;
+      margin: 20px 0;
     }
 
     .testimonial {
       background: white;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 15px;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 20px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
 
     .testimonial strong {
       display: block;
       color: #1f2c4d;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
 
     .contact-section {
       background: url('https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/12.jpg') no-repeat center center/cover;
-      padding: 50px 15px;
+      padding: 60px 20px;
     }
 
     .contact-section form {
       background: rgba(255, 255, 255, 0.95);
-      padding: 25px;
+      padding: 30px;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
 
     .form-group {
-      margin-bottom: 12px;
+      margin-bottom: 15px;
     }
 
     input, textarea {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       border-radius: 6px;
       border: 1px solid #ccc;
-      font-size: 15px;
+      font-size: 16px;
     }
 
     button {
       background: #14213d;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 25px;
       border: none;
       border-radius: 6px;
-      font-size: 15px;
+      font-size: 16px;
       cursor: pointer;
     }
 
@@ -146,7 +147,7 @@
     iframe {
       width: 100%;
       border: 0;
-      height: 280px;
+      height: 300px;
       border-radius: 8px;
     }
 
@@ -154,8 +155,17 @@
       background: #14213d;
       color: white;
       text-align: center;
-      padding: 20px;
-      font-size: 14px;
+      padding: 25px;
+      font-size: 15px;
+    }
+
+    .footer a {
+      color: #fca311;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -179,7 +189,12 @@
     <h2>Upload Your Resume</h2>
     <p><strong>Scan the QR or email your resume</strong></p>
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=mailto:ledgerlink.consulting@gmail.com" alt="QR Code" />
-    <p>Email: <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a></p>
+    <div style="margin-top: 15px; font-size: 16px;">
+      📧 <strong>Email:</strong> 
+      <a href="mailto:ledgerlink.consulting@gmail.com" style="color: #14213d; text-decoration: underline;">
+        ledgerlink.consulting@gmail.com
+      </a>
+    </div>
   </div>
 
   <div class="section">
