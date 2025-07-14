@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Our Services - LedgerLink Consulting</title>
+  <title>Our Services – LedgerLink Consulting</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -13,8 +13,8 @@
       background: #14213d;
       padding: 15px 20px;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 30px;
       font-size: 16px;
     }
@@ -51,7 +51,7 @@
     }
 
     header img {
-      height: 100px;
+      height: 80px;
       border-radius: 8px;
     }
 
@@ -79,28 +79,29 @@
       padding-left: 15px;
     }
 
-    .services-bg {
+    .services {
       background: url('https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/business-team-working-with-new-startup-project-plan-and-discussion-information-for-financial-strategy-with-laptop-and-digital-tablet-in-a-modern-business-lounge-video.jpg') no-repeat center center/cover;
-      border-radius: 12px;
       padding: 60px 20px;
       color: white;
-      text-align: center;
     }
 
-    .services-bg h2 {
-      color: #fff;
-      font-size: 30px;
+    .services .box {
+      background: rgba(20, 33, 61, 0.8);
+      padding: 25px;
+      border-radius: 10px;
       margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
-    .service-box {
-      background: rgba(255, 255, 255, 0.95);
-      color: #14213d;
-      border-radius: 12px;
-      padding: 30px;
-      margin-top: 30px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      text-align: left;
+    .services h3 {
+      font-size: 22px;
+      color: #fca311;
+      margin-bottom: 10px;
+    }
+
+    .services p {
+      font-size: 16px;
+      line-height: 1.6;
     }
 
     .footer {
@@ -111,23 +112,10 @@
       font-size: 15px;
     }
 
-    @media screen and (max-width: 600px) {
+    @media (max-width: 768px) {
       nav {
-        gap: 15px;
-        font-size: 14px;
-        padding: 10px;
-      }
-
-      header img {
-        height: 70px;
-      }
-
-      header h1 {
-        font-size: 28px;
-      }
-
-      .services-bg h2 {
-        font-size: 24px;
+        flex-direction: column;
+        align-items: center;
       }
     }
   </style>
@@ -148,32 +136,32 @@
     <p>Linking Talent & Trust with Numbers</p>
   </header>
 
-  <div class="section services-bg">
-    <h2>Our Core Services</h2>
+  <div class="section services">
+    <h2>Our Services</h2>
 
-    <div class="service-box">
-      <h3>📊 Accounting & Bookkeeping</h3>
-      <p>We provide reliable accounting solutions tailored to your business. From daily bookkeeping to monthly reconciliation and reporting, we ensure your financials are always in order.</p>
+    <div class="box">
+      <h3>Accounting & Bookkeeping</h3>
+      <p>We offer full-service accounting including monthly bookkeeping, reconciliation, payroll processing, and preparation of financial statements to help you stay compliant and informed.</p>
     </div>
 
-    <div class="service-box">
-      <h3>🧾 Tax Planning & Filing</h3>
-      <p>Strategic tax planning and accurate filing services to help reduce your liabilities while staying fully compliant with the latest tax laws and deadlines.</p>
+    <div class="box">
+      <h3>Tax Planning & Filing</h3>
+      <p>From GST to Income Tax, we help individuals and businesses optimize tax savings and ensure timely, accurate filing to avoid penalties and maximize returns.</p>
     </div>
 
-    <div class="service-box">
-      <h3>💼 Business Consulting</h3>
-      <p>Whether you're a startup or a growing enterprise, our experienced consultants offer data-driven advice and financial strategies to help scale your operations smoothly.</p>
+    <div class="box">
+      <h3>Business Incorporation</h3>
+      <p>Starting a business? We handle everything from name approval to company registration, PAN/TAN application, and compliance setup for startups and entrepreneurs.</p>
     </div>
 
-    <div class="service-box">
-      <h3>📈 Financial Forecasting</h3>
-      <p>We help you plan your future with clarity—cash flow projections, investment analysis, and budgeting that supports your growth and stability.</p>
+    <div class="box">
+      <h3>Financial Consulting</h3>
+      <p>Our experts guide you with budgeting, forecasting, and strategy formulation to drive growth and ensure your financial health is on the right track.</p>
     </div>
 
-    <div class="service-box">
-      <h3>👥 Payroll & Compliance</h3>
-      <p>Ensure smooth payroll processing and employee benefits management, while staying compliant with all legal and statutory obligations.</p>
+    <div class="box">
+      <h3>Compliance & Legal Support</h3>
+      <p>Stay up to date with ROC filings, labor law compliances, and other statutory obligations. We offer reliable legal and compliance assistance for hassle-free operations.</p>
     </div>
   </div>
 
@@ -181,7 +169,7 @@
     &copy; 2025 LedgerLink Consulting. All Rights Reserved.<br>
     📍 Pioneer Park, Barasat, Kolkata – 700124<br>
     📞 +91 8902277204<br>
-    📧 <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a>
+    📧 <a href="mailto:ledgerlink.consulting@gmail.com" style="color: #fca311;">ledgerlink.consulting@gmail.com</a>
   </div>
 
 </body>
