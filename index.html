@@ -2,129 +2,170 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>LedgerLink Consulting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #f4f7fb; color: #222; }
     header {
-      background-color: #14213d;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
+      background: linear-gradient(90deg, #14213d, #1f2c4d);
+      color: white; padding: 40px 20px; text-align: center;
     }
-    header h1 {
-      margin: 0;
-    }
-    nav {
-      background-color: #fca311;
-      padding: 10px 20px;
-      text-align: right;
-    }
-    nav a {
-      color: #14213d;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
+    header img { height: 80px; }
+    header h1 { font-size: 32px; margin-top: 10px; }
+    header p { color: #fca311; font-size: 18px; }
+
+    .section {
       padding: 40px 20px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-top: 30px;
     }
-    footer {
-      background-color: #14213d;
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      border-left: 5px solid #fca311;
+      padding-left: 15px;
+      color: #14213d;
+    }
+    ul { padding-left: 25px; }
+    li { margin-bottom: 10px; }
+
+    .form-group { margin-bottom: 15px; }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      background: #14213d;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover { background: #1f2c4d; }
+
+    .footer {
+      background: #14213d;
       color: white;
       text-align: center;
       padding: 20px;
+      margin-top: 40px;
     }
-    .form-section {
-      background-color: #f1f1f1;
-      padding: 30px;
-      border-radius: 10px;
+    iframe { width: 100%; border: 0; height: 300px; border-radius: 8px; }
+
+    .qr-code {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
     }
-    .form-section input, .form-section textarea {
-      width: 100%;
-      padding: 12px;
-      margin-top: 8px;
-      margin-bottom: 16px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .form-section button {
-      background-color: #fca311;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    .form-section button:hover {
-      background-color: #e59400;
-    }
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      margin-top: 20px;
+    .qr-code img { max-width: 200px; border: 2px solid #ccc; border-radius: 8px; }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 24px; }
+      .section h2 { font-size: 20px; }
     }
   </style>
 </head>
 <body>
+
   <header>
+    <img src="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg" alt="Logo" />
     <h1>LedgerLink Consulting</h1>
     <p>Linking Talent & Trust with Numbers</p>
   </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>LedgerLink Consulting, founded by Argha Kumar Mondal in 2025, is a firm offering reliable accounting solutions and HR staffing services. We serve businesses of all sizes by connecting them with the right talent and managing their books with utmost accuracy.</p>
-  </section>
+  <div class="section">
+    <h2>Upload Your Resume</h2>
+    <p style="text-align: center; margin-bottom: 10px;"><strong>::: Upload Resume :::</strong></p>
+    <form action="mailto:ledgerlink.consulting@gmail.com" method="post" enctype="text/plain">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Enter your email ID" required />
+      </div>
+      <div class="form-group">
+        <input type="tel" name="phone" placeholder="Enter your phone number" required />
+      </div>
+      <div class="form-group">
+        <textarea rows="4" name="message" placeholder="Message or details..."></textarea>
+      </div>
+      <button type="submit">Send Resume</button>
+    </form>
+    <div class="qr-code">
+      <p>Or scan to upload your resume</p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://your-resume-upload-link.com" alt="QR Code" />
+    </div>
+  </div>
 
-  <section>
+  <div class="section">
     <h2>Our Services</h2>
     <ul>
       <li>Accounting & Bookkeeping</li>
       <li>Payroll Management</li>
+      <li>HR Recruitment & Staffing</li>
       <li>Tax Filing & Compliance</li>
-      <li>GST, TDS, Business Registration</li>
-      <li>HR & Staffing Solutions</li>
+      <li>GST & TDS Return Filing</li>
+      <li>Business Registration & Advisory</li>
     </ul>
-  </section>
+  </div>
 
-  <section>
+  <div class="section">
     <h2>Client Testimonials</h2>
-    <p><strong>LedgerLink Consulting</strong> has made our payroll and GST compliance effortless. Their team is responsive, detail-oriented, and always on time. Highly recommended for any small business!</p>
-    <p><em>— Argha Kumar Mondal, Founder, LedgerLink Consulting</em></p>
-  </section>
+    <p><strong>Argha Kumar Mondal</strong> – Founder, LedgerLink Consulting</p>
+    <p>“At LedgerLink, we value every client. Our goal is to provide accurate, timely, and trustworthy accounting and consulting support. Your success is our success.”</p>
+  </div>
 
-  <section class="form-section">
-    <h2>Get In Touch</h2>
-    <form>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Your name..">
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Your email..">
-
-      <label for="phone">Phone</label>
-      <input type="tel" id="phone" name="phone" placeholder="Your phone number..">
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="Write something.." style="height:150px"></textarea>
-
+  <div class="section">
+    <h2>Contact Form</h2>
+    <form action="mailto:ledgerlink.consulting@gmail.com" method="post" enctype="text/plain">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Enter your email ID" required />
+      </div>
+      <div class="form-group">
+        <input type="tel" name="phone" placeholder="Enter your phone number" required />
+      </div>
+      <div class="form-group">
+        <textarea rows="4" name="message" placeholder="Your message here..."></textarea>
+      </div>
       <button type="submit">Submit Now</button>
     </form>
+  </div>
 
-    <iframe src="https://www.google.com/maps?q=Pioneer+Park,+Barasat,+Kolkata+700124&output=embed"></iframe>
-  </section>
+  <div class="section">
+    <h2>Our Location</h2>
+    <iframe 
+      src="https://maps.google.com/maps?q=Pioneer%20Park,%20Barasat,%20Kolkata%20700124&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
 
-  <footer>
-    <p>Contact: <a href="mailto:ledgerlink.consulting@gmail.com" style="color:#fca311;">ledgerlink.consulting@gmail.com</a> | Phone: <a href="tel:+918902277204" style="color:#fca311;">+91 8902277204</a></p>
-    <p>Address: Pioneer Park, Barasat, Kolkata – 700124</p>
-    <p>© 2025 LedgerLink Consulting. All rights reserved.</p>
-  </footer>
+  <div class="section">
+    <h2>Awards & Recognitions</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/Economic_Times_Logo.svg/1200px-Economic_Times_Logo.svg.png" alt="Award" style="max-width:150px;">
+    <p>Recognized by ET Industry Leaders – 2025</p>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 LedgerLink Consulting. All Rights Reserved.<br>
+    Contact: 8902277204 | Email: ledgerlink.consulting@gmail.com
+  </div>
+
 </body>
-</html>
+</html>          
