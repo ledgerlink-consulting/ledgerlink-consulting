@@ -1,188 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Our Pricing – LedgerLink Consulting</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; background: #f8f9fc; color: #222; }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Services | LedgerLink Consulting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #f8f9fc; color: #222; }
 
-    nav {
-      background: #14213d;
-      padding: 15px 20px;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      font-size: 16px;
-    }
+    nav {
+      background: #14213d;
+      padding: 15px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
 
-    nav a {
-      color: #fca311;
-      text-decoration: none;
-      font-weight: 600;
-    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+    }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+    nav a:hover {
+      color: #fca311;
+    }
 
-    header {
-      background: url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?fit=crop&w=1350&q=80') no-repeat center center/cover;
-      color: white;
-      padding: 100px 20px 60px;
-      text-align: center;
-      position: relative;
-    }
+    header {
+      background: url('https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/business-team-working-with-new-startup-project-plan-and-discussion-information-for-financial-strategy-with-laptop-and-digital-tablet-in-a-modern-business-lounge-video.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px 60px;
+      text-align: center;
+      position: relative;
+    }
 
-    header::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(20, 33, 61, 0.75);
-      z-index: 0;
-    }
+    header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(20, 33, 61, 0.75);
+      z-index: 0;
+    }
 
-    header > * {
-      position: relative;
-      z-index: 1;
-    }
+    header > * {
+      position: relative;
+      z-index: 1;
+    }
 
-    header img {
-      height: 80px;
-      border-radius: 8px;
-    }
+    header img {
+      height: 80px;
+      border-radius: 8px;
+    }
 
-    header h1 {
-      font-size: 36px;
-      margin-top: 20px;
-    }
+    header h1 {
+      font-size: 36px;
+      margin-top: 20px;
+    }
 
-    header p {
-      font-size: 18px;
-      color: #fca311;
-    }
+    header p {
+      font-size: 18px;
+      color: #fca311;
+    }
 
-    .section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
 
-    .section h2 {
-      font-size: 28px;
-      color: #14213d;
-      margin-bottom: 30px;
-      border-left: 5px solid #fca311;
-      padding-left: 15px;
-    }
+    .section h2 {
+      font-size: 28px;
+      color: #14213d;
+      margin-bottom: 30px;
+      border-left: 5px solid #fca311;
+      padding-left: 15px;
+    }
 
-    .pricing-table {
-      background: white;
-      border-radius: 12px;
-      padding: 30px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
 
-    .pricing-item {
-      margin-bottom: 20px;
-    }
+    .service-box {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
 
-    .pricing-item strong {
-      font-size: 18px;
-      color: #14213d;
-      display: block;
-      margin-bottom: 5px;
-    }
+    .service-box:hover {
+      transform: translateY(-5px);
+    }
 
-    .footer {
-      background: #14213d;
-      color: white;
-      text-align: center;
-      padding: 25px;
-      font-size: 15px;
-    }
+    .service-box h3 {
+      color: #1f2c4d;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
 
-    a {
-      color: #fca311;
-    }
-  </style>
+    .service-box p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    .footer {
+      background: #14213d;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 15px;
+    }
+
+    a {
+      color: #fca311;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        gap: 20px;
+        padding: 10px;
+      }
+      header h1 {
+        font-size: 26px;
+      }
+      .section h2 {
+        font-size: 22px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="pricing.html">Our Pricing</a>
-    <a href="services.html">Our Services</a>
-    <a href="about.html">About Us</a>
-    <a href="index.html#contact">Contact</a>
-  </nav>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Our Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
 
-  <header>
-    <img src="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg" alt="Logo" />
-    <h1>Our Pricing</h1>
-    <p>Transparent & Competitive Rates Tailored for Your Needs</p>
-  </header>
+  <header>
+    <img src="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg" alt="LedgerLink Logo" />
+    <h1>Our Services</h1>
+    <p>Professional Solutions in Accounting, Taxation & HR</p>
+  </header>
 
-  <div class="section">
-    <h2>Pricing Structure</h2>
-    <div class="pricing-table">
-      <div class="pricing-item">
-        <strong>GST & TDS Return Filing (including 9 & 9C):</strong>
-        Starts at ₹599/month (depending on volume and turnover)
-      </div>
-      <div class="pricing-item">
-        <strong>Company Incorporation:</strong>
-        ₹4,999 – ₹9,999 (based on company type and structure)
-      </div>
-      <div class="pricing-item">
-        <strong>Trademark Registration:</strong>
-        ₹1,499 onwards
-      </div>
-      <div class="pricing-item">
-        <strong>Income Tax Filing:</strong>
-        ₹499 – ₹4,999 (individual & business filings)
-      </div>
-      <div class="section">
-  <h2>Pricing for Our Key Services</h2>
-
-  <div class="testimonial">
-    <strong>GST Registration</strong><br>
-    <strong>Price: ₹1000</strong>
-  </div>
-
-  <div class="testimonial">
-    <strong>Tax Audit</strong><br>
-    <strong>Price: ₹6000</strong>
-  </div>
-
-  <div class="testimonial">
-    <strong>UDIN Generation</strong><br>
-    <strong>Price: ₹2000</strong>
-  </div>
+  <div class="section">
+    <h2>What We Offer</h2>
+    <div class="services-grid">
+      <div class="service-box">
+        <h3>Accounting & Bookkeeping</h3>
+        <p>Ledgers, cash books, journal entries, profit & loss, and balance sheet preparation.</p>
       </div>
-      <div class="pricing-item">
-        <strong>Accounting & Bookkeeping Services:</strong>
-        Starts at ₹1,999/month
-      </div>
-      <div class="pricing-item">
-        <strong>Payroll Processing:</strong>
-        Custom pricing based on team size
-      </div>
-      <div class="pricing-item">
-        <strong>Business Advisory & Consulting:</strong>
-        Hourly or project-based packages
-      </div>
-    </div>
-  </div>
+      <div class="service-box">
+        <h3>Payroll Management</h3>
+        <p>Salary processing, attendance, payslips, PF/ESI returns, TDS on salaries.</p>
+      </div>
+      <div class="service-box">
+        <h3>HR Recruitment & Staffing</h3>
+        <p>Candidate sourcing, interviews, onboarding, and staffing across domains.</p>
+      </div>
+      <div class="service-box">
+        <h3>Tax Filing & Compliance</h3>
+        <p>ITR 1–7, TDS returns, tax audit prep, advance tax, and compliance reports.</p>
+      </div>
+      <div class="service-box">
+        <h3>GST & TDS Return Filing</h3>
+        <p>GSTR-1, 3B, 9, registration, TDS 26Q/27Q, payments, reconciliation.<br>
+        <strong>Also includes:</strong> GST 9C preparation, audit coordination, and representation support.</p>
+      </div>
+      <div class="service-box">
+        <h3>Business Registration & Advisory</h3>
+        <p>MSME, proprietorship, company setup, DIN, DSC, PAN/TAN & planning.</p>
+      </div>
+      <div class="service-box">
+        <h3>FSSAI Registration</h3>
+        <p>Food business license registration, renewals, and compliance filing for FBOs.</p>
+      </div>
+      <div class="service-box">
+        <h3>Professional Tax (P-Tax) Filing</h3>
+        <p>Employer and employee registration, monthly return filing, and compliance.</p>
+      </div>
+      <div class="service-box">
+        <h3>Import & Export License (IEC)</h3>
+        <p>Obtaining IEC for businesses, DGFT liaison, and related trade compliances.</p>
+      </div>
+      <div class="service-box">
+        <h3>Case Closures & Legal Advisory</h3>
+        <p>Support with closure of tax cases, notices, and legal representation before authorities.</p>
+      </div>
+      <div class="service-box">
+        <h3>Expanded TDS & GST Support</h3>
+        <p>Late fee calculations, interest payments, correction returns, NIL filings, and compliance review.</p>
+      </div>
+    </div>
+  </div>
 
-  <div class="footer">
-    &copy; 2025 LedgerLink Consulting. All Rights Reserved.<br>
-    📍 Pioneer Park, Barasat, Kolkata – 700124<br>
-    📞 +91 8902277204<br>
-    📧 <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a>
-  </div>
+  <div class="footer">
+    &copy; 2025 LedgerLink Consulting. All Rights Reserved.<br>
+    📍 Pioneer Park, Barasat, Kolkata – 700124<br>
+    📞 +91 8902277204<br>
+    📧 <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a>
+  </div>
 
 </body>
 </html>
