@@ -11,7 +11,7 @@
 
     nav {
       background: #14213d;
-      padding: 12px 10px;
+      padding: 15px 20px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -32,7 +32,7 @@
     header {
       background: url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?fit=crop&w=1350&q=80') no-repeat center center/cover;
       color: white;
-      padding: 70px 15px 50px;
+      padding: 60px 15px 40px;
       text-align: center;
       position: relative;
     }
@@ -56,18 +56,19 @@
     }
 
     header h1 {
-      font-size: 28px;
+      font-size: 26px;
       margin-top: 15px;
     }
 
     header p {
       font-size: 16px;
       color: #fca311;
+      margin-top: 5px;
     }
 
     .section {
       padding: 40px 15px;
-      max-width: 960px;
+      max-width: 1200px;
       margin: auto;
     }
 
@@ -75,7 +76,7 @@
       font-size: 22px;
       color: #14213d;
       margin-bottom: 25px;
-      border-left: 4px solid #fca311;
+      border-left: 5px solid #fca311;
       padding-left: 12px;
     }
 
@@ -89,13 +90,17 @@
 
     .qr-section img {
       max-width: 160px;
-      margin: 15px 0;
+      margin: 20px 0;
     }
 
     .qr-section p {
       font-size: 15px;
-      margin: 8px 0;
+    }
+
+    .qr-section a {
       color: #222;
+      text-decoration: none;
+      font-weight: 500;
     }
 
     .testimonial {
@@ -110,7 +115,7 @@
     .testimonial strong {
       display: block;
       color: #1f2c4d;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
 
     .contact-section {
@@ -126,7 +131,7 @@
     }
 
     .form-group {
-      margin-bottom: 12px;
+      margin-bottom: 15px;
     }
 
     input, textarea {
@@ -154,7 +159,7 @@
     iframe {
       width: 100%;
       border: 0;
-      height: 260px;
+      height: 280px;
       border-radius: 8px;
     }
 
@@ -162,7 +167,7 @@
       background: #14213d;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 20px 10px;
       font-size: 14px;
     }
 
@@ -171,15 +176,27 @@
       text-decoration: none;
     }
 
-    .footer a:hover {
-      text-decoration: underline;
-    }
+    @media (max-width: 480px) {
+      nav {
+        gap: 12px;
+        font-size: 14px;
+      }
 
-    @media (max-width: 500px) {
-      header h1 { font-size: 22px; }
-      header p { font-size: 14px; }
-      nav { font-size: 14px; gap: 10px; }
-      .section h2 { font-size: 20px; }
+      header h1 {
+        font-size: 22px;
+      }
+
+      header p {
+        font-size: 15px;
+      }
+
+      .section h2 {
+        font-size: 20px;
+      }
+
+      .qr-section img {
+        max-width: 140px;
+      }
     }
   </style>
 </head>
@@ -203,7 +220,7 @@
     <h2>Upload Your Resume</h2>
     <p><strong>Scan the QR or email your resume</strong></p>
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=mailto:ledgerlink.consulting@gmail.com" alt="QR Code" />
-    <p>Email: ledgerlink.consulting@gmail.com</p>
+    <p>Email: <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a></p>
   </div>
 
   <div class="section">
