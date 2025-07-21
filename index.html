@@ -1,315 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="google-site-verification" content="rsz2hEdFk-cDzTjWVOGPC8MyU1wWBjHuJfcEf-sGwp4" />
-  <title>LedgerLink Consulting</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="rsz2hEdFk-cDzTjWVOGPC8MyU1wWBjHuJfcEf-sGwp4" />
+  <title>LedgerLink Consulting</title>
 
-  <!-- ✅ SEO Meta Tags -->
-  <meta name="description" content="LedgerLink Consulting offers expert accounting, tax, and HR consulting services in Kolkata. Trusted talent linking for your business success.">
-  <meta name="keywords" content="LedgerLink Consulting, Accounting Services, HR Consulting, Tax Filing, Resume Submission, Kolkata Business Consulting">
-  <meta name="author" content="LedgerLink Consulting">
-  <meta name="robots" content="index, follow">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="LedgerLink Consulting - Expert accounting, financial consulting, and hiring solutions. Linking Talent & Trust with Numbers. Based in Kolkata, India.">
+  <meta name="keywords" content="LedgerLink Consulting, Accounting, Financial Consulting, Resume Submission, Kolkata Hiring, Talent Solutions, Business Consulting, India, CA services">
+  <meta name="author" content="LedgerLink Consulting">
+  <meta name="robots" content="index, follow">
 
-  <!-- ✅ Open Graph Tags for Social Media -->
-  <meta property="og:title" content="LedgerLink Consulting">
-  <meta property="og:description" content="Linking Talent & Trust with Numbers. Contact us today or upload your resume.">
-  <meta property="og:image" content="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg">
-  <meta property="og:url" content="https://ledgerlink-consulting.github.io">
-  <meta property="og:type" content="website">
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="LedgerLink Consulting">
+  <meta property="og:description" content="Linking Talent & Trust with Numbers. Upload your resume, get expert financial help.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg">
+  <meta property="og:url" content="https://ledgerlink-consulting.github.io">
+  <meta property="og:type" content="website">
 
-  <!-- ✅ Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="LedgerLink Consulting">
-  <meta name="twitter:description" content="Trusted accounting and HR consulting from LedgerLink. Upload resume or get in touch.">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg">
+  <!-- Favicon and Font -->
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- ✅ Structured Data for Google -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "LedgerLink Consulting",
-    "url": "https://ledgerlink-consulting.github.io",
-    "logo": "https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg",
-    "email": "ledgerlink.consulting@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Pioneer Park",
-      "addressLocality": "Barasat",
-      "addressRegion": "Kolkata",
-      "postalCode": "700124",
-      "addressCountry": "IN"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91 8902277204",
-      "contactType": "customer service"
-    }
-  }
-  </script>
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LedgerLink Consulting",
+    "url": "https://ledgerlink-consulting.github.io",
+    "logo": "https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg",
+    "email": "mailto:ledgerlink.consulting@gmail.com",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-8902277204",
+      "contactType": "customer support"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Pioneer Park, Barasat",
+      "addressLocality": "Kolkata",
+      "postalCode": "700124",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
 
-  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/favicon.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; background: #f8f9fc; color: #222; }
-
-    nav {
-      background: #14213d;
-      padding: 15px 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      font-size: 15px;
-    }
-
-    nav a {
-      color: #fca311;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    header {
-      background: url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?fit=crop&w=1350&q=80') no-repeat center center/cover;
-      color: white;
-      padding: 60px 15px 40px;
-      text-align: center;
-      position: relative;
-    }
-
-    header::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(20, 33, 61, 0.75);
-      z-index: 0;
-    }
-
-    header > * {
-      position: relative;
-      z-index: 1;
-    }
-
-    header img {
-      height: 100px;
-      border-radius: 8px;
-    }
-
-    header h1 {
-      font-size: 26px;
-      margin-top: 15px;
-    }
-
-    header p {
-      font-size: 16px;
-      color: #fca311;
-      margin-top: 5px;
-    }
-
-    .section {
-      padding: 40px 15px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .section h2 {
-      font-size: 22px;
-      color: #14213d;
-      margin-bottom: 25px;
-      border-left: 5px solid #fca311;
-      padding-left: 12px;
-    }
-
-    .qr-section {
-      text-align: center;
-      background: white;
-      border-radius: 10px;
-      padding: 30px 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-
-    .qr-section img {
-      max-width: 160px;
-      margin: 20px 0;
-    }
-
-    .qr-section p {
-      font-size: 15px;
-    }
-
-    .qr-section a {
-      color: #d62828;
-      font-weight: 600;
-      text-decoration: underline;
-    }
-
-    .testimonial {
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      font-size: 15px;
-    }
-
-    .testimonial strong {
-      display: block;
-      color: #1f2c4d;
-      margin-bottom: 8px;
-    }
-
-    .contact-section {
-      background: url('https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/12.jpg') no-repeat center center/cover;
-      padding: 50px 15px;
-    }
-
-    .contact-section form {
-      background: rgba(255, 255, 255, 0.95);
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-
-    .form-group {
-      margin-bottom: 15px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-size: 15px;
-    }
-
-    button {
-      background: #14213d;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      font-size: 15px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #1f2c4d;
-    }
-
-    iframe {
-      width: 100%;
-      border: 0;
-      height: 280px;
-      border-radius: 8px;
-    }
-
-    .footer {
-      background: #14213d;
-      color: white;
-      text-align: center;
-      padding: 20px 10px;
-      font-size: 14px;
-    }
-
-    .footer a {
-      color: #fca311;
-      text-decoration: none;
-    }
-
-    @media (max-width: 480px) {
-      nav {
-        gap: 12px;
-        font-size: 14px;
-      }
-
-      header h1 {
-        font-size: 22px;
-      }
-
-      header p {
-        font-size: 15px;
-      }
-
-      header img {
-        height: 80px;
-      }
-
-      .section h2 {
-        font-size: 20px;
-      }
-
-      .qr-section img {
-        max-width: 140px;
-      }
-    }
-  </style>
+  <style>
+    /* SAME CSS AS YOU PROVIDED */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #f8f9fc; color: #222; }
+    nav {
+      background: #14213d;
+      padding: 15px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      font-size: 15px;
+    }
+    nav a {
+      color: #fca311;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?fit=crop&w=1350&q=80') no-repeat center center/cover;
+      color: white;
+      padding: 60px 15px 40px;
+      text-align: center;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(20, 33, 61, 0.75);
+      z-index: 0;
+    }
+    header > * { position: relative; z-index: 1; }
+    header img {
+      height: 100px;
+      border-radius: 8px;
+    }
+    header h1 {
+      font-size: 26px;
+      margin-top: 15px;
+    }
+    header p {
+      font-size: 16px;
+      color: #fca311;
+      margin-top: 5px;
+    }
+    .section {
+      padding: 40px 15px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 22px;
+      color: #14213d;
+      margin-bottom: 25px;
+      border-left: 5px solid #fca311;
+      padding-left: 12px;
+    }
+    .qr-section {
+      text-align: center;
+      background: white;
+      border-radius: 10px;
+      padding: 30px 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .qr-section img {
+      max-width: 160px;
+      margin: 20px 0;
+    }
+    .qr-section p {
+      font-size: 15px;
+    }
+    .qr-section a {
+      color: #d62828;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    .testimonial {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      font-size: 15px;
+    }
+    .testimonial strong {
+      display: block;
+      color: #1f2c4d;
+      margin-bottom: 8px;
+    }
+    .contact-section {
+      background: url('https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/12.jpg') no-repeat center center/cover;
+      padding: 50px 15px;
+    }
+    .contact-section form {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+    button {
+      background: #14213d;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1f2c4d;
+    }
+    iframe {
+      width: 100%;
+      border: 0;
+      height: 280px;
+      border-radius: 8px;
+    }
+    .footer {
+      background: #14213d;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 14px;
+    }
+    .footer a {
+      color: #fca311;
+      text-decoration: none;
+    }
+    @media (max-width: 480px) {
+      nav { gap: 12px; font-size: 14px; }
+      header h1 { font-size: 22px; }
+      header p { font-size: 15px; }
+      header img { height: 80px; }
+      .section h2 { font-size: 20px; }
+      .qr-section img { max-width: 140px; }
+    }
+  </style>
 </head>
 <body>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="pricing.html">Our Pricing</a>
-    <a href="services.html">Our Services</a>
-    <a href="about.html">About Us</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pricing.html">Our Pricing</a>
+    <a href="services.html">Our Services</a>
+    <a href="about.html">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <header>
-    <img src="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg" alt="Logo" />
-    <h1>LedgerLink Consulting</h1>
-    <p>Linking Talent & Trust with Numbers</p>
-  </header>
+  <header>
+    <img src="https://raw.githubusercontent.com/ledgerlink-consulting/ledgerlink-consulting/refs/heads/main/Assets/1752431448708.jpg" alt="Logo" />
+    <h1>LedgerLink Consulting</h1>
+    <p>Linking Talent & Trust with Numbers</p>
+  </header>
 
-  <div class="section qr-section">
-    <h2>Upload Your Resume</h2>
-    <p><strong>Scan the QR or email your resume</strong></p>
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=mailto:ledgerlink.consulting@gmail.com?subject=Resume%20Submission&body=Hello%2C%20please%20find%20my%20resume%20attached." alt="QR Code">
-    <p>Email: <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a></p>
-  </div>
+  <div class="section qr-section">
+    <h2>Upload Your Resume</h2>
+    <p><strong>Scan the QR or email your resume</strong></p>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=mailto:ledgerlink.consulting@gmail.com?subject=Resume%20Submission&body=Hello%2C%20please%20find%20my%20resume%20attached." alt="QR Code">
+    <p>Email: <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a></p>
+  </div>
 
-  <div class="section">
-    <h2>Client Testimonials</h2>
-    <div class="testimonial">
-      <strong>Argha Kumar Mondal – Founder</strong>
-      “At LedgerLink, we value every client. Our goal is to provide accurate, timely, and trustworthy accounting and consulting support. Your success is our success.”
-    </div>
-    <div class="testimonial">
-      <strong>Subhajit Ghosh – Co-founder</strong>
-      "We believe in building strong, long-term relationships with our clients by delivering consistent, quality-driven solutions."
-    </div>
-  </div>
+  <div class="section">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial">
+      <strong>Argha Kumar Mondal – Founder</strong>
+      “At LedgerLink, we value every client. Our goal is to provide accurate, timely, and trustworthy accounting and consulting support. Your success is our success.”
+    </div>
+    <div class="testimonial">
+      <strong>Subhajit Ghosh – Co-founder</strong>
+      "We believe in building strong, long-term relationships with our clients by delivering consistent, quality-driven solutions."
+    </div>
+  </div>
 
-  <div class="section contact-section" id="contact">
-    <h2>Contact Form</h2>
-    <form action="mailto:ledgerlink.consulting@gmail.com" method="post" enctype="text/plain">
-      <div class="form-group"><input type="text" name="name" placeholder="Your Name" required /></div>
-      <div class="form-group"><input type="email" name="email" placeholder="Your Email" required /></div>
-      <div class="form-group"><input type="tel" name="phone" placeholder="Your Phone Number" required /></div>
-      <div class="form-group"><textarea name="message" rows="4" placeholder="Your Message"></textarea></div>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
+  <div class="section contact-section" id="contact">
+    <h2>Contact Form</h2>
+    <form action="mailto:ledgerlink.consulting@gmail.com" method="post" enctype="text/plain">
+      <div class="form-group"><input type="text" name="name" placeholder="Your Name" required /></div>
+      <div class="form-group"><input type="email" name="email" placeholder="Your Email" required /></div>
+      <div class="form-group"><input type="tel" name="phone" placeholder="Your Phone Number" required /></div>
+      <div class="form-group"><textarea name="message" rows="4" placeholder="Your Message"></textarea></div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 
-  <div class="section">
-    <h2>Our Location</h2>
-    <iframe src="https://maps.google.com/maps?q=Pioneer%20Park,%20Barasat,%20Kolkata%20700124&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
-  </div>
+  <div class="section">
+    <h2>Our Location</h2>
+    <iframe src="https://maps.google.com/maps?q=Pioneer%20Park,%20Barasat,%20Kolkata%20700124&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+  </div>
 
-  <div class="footer">
-    &copy; 2025 LedgerLink Consulting. All Rights Reserved.<br>
-    📍 Pioneer Park, Barasat, Kolkata – 700124<br>
-    📞 +91 8902277204<br>
-    📧 <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a>
-  </div>
+  <div class="footer">
+    &copy; 2025 LedgerLink Consulting. All Rights Reserved.<br>
+    📍 Pioneer Park, Barasat, Kolkata – 700124<br>
+    📞 +91 8902277204<br>
+    📧 <a href="mailto:ledgerlink.consulting@gmail.com">ledgerlink.consulting@gmail.com</a>
+  </div>
 
 </body>
 </html>
-  
